@@ -1,19 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerControllerPrototype : MonoBehaviour
+namespace Prototypes.Primitives.Player.Scripts
 {
-
-    // Animator animator;
-    NavMeshAgent navMeshAgent;
-
-    // Start is called before the first frame update
-    void Awake()
+    public class PlayerControllerPrototype : MonoBehaviour
     {
-        // Initialize any component reference
-        // animator = (Animator)GetComponent(typeof(Animator));
-        navMeshAgent = (NavMeshAgent)GetComponent(typeof(NavMeshAgent));
+
+        // Animator animator;
+        NavMeshAgent navMeshAgent;
+
+        // Start is called before the first frame update
+        void Awake()
+        {
+            // Initialize any component reference
+            // animator = (Animator)GetComponent(typeof(Animator));
+            navMeshAgent = (NavMeshAgent)GetComponent(typeof(NavMeshAgent));
+        }
     }
 }
