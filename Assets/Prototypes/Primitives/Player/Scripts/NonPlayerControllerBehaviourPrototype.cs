@@ -52,9 +52,11 @@ namespace Prototypes.Primitives.Player.Scripts
         // Cached References
         // private Animator animator;
         private NavMeshAgent navMeshAgent;
+        private bool _isplayerNotNull;
 
         void Awake()
         {
+            _isplayerNotNull = player != null;
             // Initialize all the reference component
             // animator = GetComponent<Animator>();
             navMeshAgent = GetComponent<NavMeshAgent>();
@@ -72,19 +74,34 @@ namespace Prototypes.Primitives.Player.Scripts
 
             if (waypoints.Length > 0)
             {
+                // Patrol after a specific amount of time
                 InvokeRepeating("Patrol", 0, patrolTime);
             }
         }
 
         void Patrol()
         {
-            // Souped conditional statement
+            // Shorthand for if-else statement
             index = index == waypoints.Length - 1 ? 0 : index + 1;
         }
 
         void Tick()
         {
+            // Enemy's current destination
             navMeshAgent.destination = waypoints[index].position;
+            
+            // Cut the speed of the enemy when patrolling
+            navMeshAgent.speed = agentSpeed / 2;
+            
+            // Check if the player is in the scene and the distance between the enemy and the player is less than the aggro range
+            if (_isplayerNotNull && Vector3.Distance(transform.position, player.position) < aggroRange)
+            {
+                // Chase the player
+                navMeshAgent.destination = player.position;
+                
+                // Speed up the movement of the enemy
+                navMeshAgent.speed = agentSpeed;
+            }
         }
     }
 }
