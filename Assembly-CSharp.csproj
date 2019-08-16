@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prototypes\Primitives\Player\Scripts\MouseManagerPrototype.cs" />
+    <Compile Include="Assets\Prototypes\Primitives\Player\Scripts\NonPlayerControllerBehaviourPrototype.cs" />
     <Compile Include="Assets\Prototypes\Primitives\Player\Scripts\PlayerControllerPrototype.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

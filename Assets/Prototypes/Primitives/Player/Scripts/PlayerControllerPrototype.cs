@@ -3,6 +3,9 @@ using UnityEngine.AI;
 
 namespace Prototypes.Primitives.Player.Scripts
 {
+    /// <summary>
+    /// This script handles the game logic for player.
+    /// </summary>
     public class PlayerControllerPrototype : MonoBehaviour
     {
 
