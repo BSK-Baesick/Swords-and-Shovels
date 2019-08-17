@@ -117,6 +117,18 @@
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/Mr. Leeds/Desktop/BaeSICK Entertainment/Game Files/Projects/PROJECT - Alpha/Swords and Shovels/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>

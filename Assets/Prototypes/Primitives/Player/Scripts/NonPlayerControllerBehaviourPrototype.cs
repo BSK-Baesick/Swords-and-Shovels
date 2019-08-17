@@ -52,11 +52,9 @@ namespace Prototypes.Primitives.Player.Scripts
         // Cached References
         // private Animator animator;
         private NavMeshAgent navMeshAgent;
-        private bool _isplayerNotNull;
 
         void Awake()
         {
-            _isplayerNotNull = player != null;
             // Initialize all the reference component
             // animator = GetComponent<Animator>();
             navMeshAgent = GetComponent<NavMeshAgent>();
@@ -94,7 +92,7 @@ namespace Prototypes.Primitives.Player.Scripts
             navMeshAgent.speed = agentSpeed / 2;
             
             // Check if the player is in the scene and the distance between the enemy and the player is less than the aggro range
-            if (_isplayerNotNull && Vector3.Distance(transform.position, player.position) < aggroRange)
+            if (player != null && Vector3.Distance(transform.position, player.position) < aggroRange)
             {
                 // Chase the player
                 navMeshAgent.destination = player.position;
