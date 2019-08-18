@@ -9,15 +9,20 @@ namespace Prototypes.Primitives.Player.Scripts
     public class PlayerControllerPrototype : MonoBehaviour
     {
 
-        // Animator animator;
-        NavMeshAgent navMeshAgent;
+        private Animator animator;
+        private NavMeshAgent navMeshAgent;
 
         // Start is called before the first frame update
-        void Awake()
+        private void Awake()
         {
             // Initialize any component reference
-            // animator = (Animator)GetComponent(typeof(Animator));
+            animator = (Animator)GetComponent(typeof(Animator));
             navMeshAgent = (NavMeshAgent)GetComponent(typeof(NavMeshAgent));
+        }
+
+        private void Update()
+        {
+            animator.SetFloat("Speed", navMeshAgent.velocity.magnitude);
         }
     }
 }
